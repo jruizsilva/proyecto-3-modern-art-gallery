@@ -1,21 +1,22 @@
 @use "../abstracts" as *;
 
-.button-group {
+.button {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
 }
 
-.button {
-  @extend %btn;
-  padding: 0.75em 1.5em;
-  color: var(--clr-text);
-  text-decoration: none;
-  background-color: var(--clr-primary);
-  border: 1px solid var(--clr-secondary);
-  border-radius: 0.5em;
-
-  &:hover {
-    background-color: var(--clr-secondary);
-  }
+.button__text {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-extrabold);
+  font-family: "Big Shoulders", sans-serif;
+  padding: 24px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+// hover effect
+.button__icon {
+  background-color: var(--clr-orange);
+  padding: 24px;
 }
