@@ -1,15 +1,49 @@
+@use "../abstracts" as *;
 .main {
   margin-bottom: 120px;
 }
-
-.hero > img {
-  margin-bottom: 32px;
+.hero {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
 }
-.hero .container {
+.hero__background {
+  background-image: url("/abuela-mobile.jpg");
+  height: 240px;
+  width: 100%;
+  display: block;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mq($tablet) {
+    background-image: url("/abuela-tablet.jpg");
+    height: 700px;
+    width: 100%;
+    margin-bottom: 120px;
+    background-position: left;
+    background-size: contain;
+  }
+}
+
+.hero .hero__content {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 120px;
+  position: relative;
+
+  @include mq($tablet) {
+    gap: 48px;
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 339px;
+    position: absolute;
+    right: 40px;
+    top: 145px;
+  }
 }
 .hero__title {
   font-weight: var(--fw-black);
@@ -18,6 +52,11 @@
   text-transform: uppercase;
   font-size: var(--fs-heading-m);
   line-height: 55px;
+
+  @include mq($tablet) {
+    font-size: var(--fs-heading-l);
+    line-height: 65px;
+  }
 }
 .hero__text {
   font-size: var(--fs-body-s);
