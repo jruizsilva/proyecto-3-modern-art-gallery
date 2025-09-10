@@ -1,0 +1,27 @@
+.footer {
+  background-color: var(--clr-black);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.footer__logo {
+  max-width: 110px;
+}
+
+.footer__title,
+.footer__text {
+  color: var(--clr-white);
+}
+
+.footer__text {
+  font-weight: var(--fw-light);
+  font-size: var(--fs-body-xs);
+  color: var(--clr-white);
+  line-height: 26px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 20px;
+}
