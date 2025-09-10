@@ -1,4 +1,7 @@
-.hero {
+.hero > img {
+  margin-bottom: 32px;
+}
+.hero .container {
   display: flex;
   flex-direction: column;
   gap: 32px;

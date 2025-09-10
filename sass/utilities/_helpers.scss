@@ -5,7 +5,7 @@
   max-width: 70rem;
   margin-inline: auto;
   padding-inline: 1rem;
-  @include mq($sm) {
+  @include mq($tablet) {
     padding-inline: 2rem;
   }
 }
@@ -15,6 +15,7 @@
 .heading-s {
   font-weight: var(--fw-black);
   color: var(--clr-black);
+  font-family: var(--ff-title);
 }
 .body-m,
 .body-s {
@@ -53,4 +54,8 @@
 
 .text-highlight {
   color: var(--clr-accent);
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

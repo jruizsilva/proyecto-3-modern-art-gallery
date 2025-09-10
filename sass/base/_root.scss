@@ -1,8 +1,6 @@
 @use "../abstracts" as *;
 
 :root {
-  --ff-primary: "Outfit", sans-serif, system-ui;
-
   @each $key, $value in $font-sizes {
     --fs-#{$key}: #{$value};
   }
@@ -13,6 +11,10 @@
 
   @each $key, $value in $colors {
     --clr-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $font-familys {
+    --ff-#{$key}: #{$value};
   }
 }
 
