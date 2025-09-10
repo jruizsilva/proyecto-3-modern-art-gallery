@@ -1,8 +1,13 @@
+@use "../abstracts" as *;
+
 .container {
   width: 100%;
   max-width: 70rem;
   margin-inline: auto;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
+  @include mq($sm) {
+    padding-inline: 2rem;
+  }
 }
 .heading-xl,
 .heading-l,
