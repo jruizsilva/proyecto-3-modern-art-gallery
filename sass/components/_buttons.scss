@@ -15,19 +15,18 @@
 .button__text {
   background-color: var(--clr-black);
   color: var(--clr-white);
-  font-size: var(--fs-button);
+  font-size: 20px;
   font-weight: var(--fw-extrabold);
-  font-family: "Big Shoulders", sans-serif;
+  font-family: var(--ff-title);
   padding: 24px 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3.23px;
 }
-// hover effect
+
 .button__icon {
   background-color: var(--clr-orange);
   padding: 24px;
-  &:hover {
-    background-color: var(--clr-black);
-  }
 }
