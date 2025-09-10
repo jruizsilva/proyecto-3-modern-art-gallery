@@ -1,5 +1,6 @@
-main {
-  display: grid;
-  gap: 1.5rem;
-  justify-items: center;
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 120px;
 }

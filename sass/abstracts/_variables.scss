@@ -1,8 +1,15 @@
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
 $colors: (
   "white": #fff,
   "orange": #d5966c,
   "black": #151515,
-  "gray": #444444,
+  "text": #444444,
 );
 
 $font-sizes: (

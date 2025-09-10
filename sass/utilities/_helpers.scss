@@ -9,6 +9,7 @@
 .heading-m,
 .heading-s {
   font-weight: var(--fw-black);
+  color: var(--clr-black);
 }
 .body-m,
 .body-s {
@@ -16,32 +17,32 @@
 }
 
 .heading-xl {
-  font-size: var(--fz-heading-xl);
+  font-size: var(--fs-heading-xl);
   line-height: 88px;
 }
 
 .heading-l {
-  font-size: var(--fz-heading-l);
+  font-size: var(--fs-heading-l);
   line-height: 70px;
 }
 
 .heading-m {
-  font-size: var(--fz-heading-m);
+  font-size: var(--fs-heading-m);
   line-height: 60px;
 }
 
 .heading-s {
-  font-size: var(--fz-heading-m);
+  font-size: var(--fs-heading-m);
   line-height: 36px;
 }
 
 .body-m {
-  font-size: var(--fz-body-m);
+  font-size: var(--fs-body-m);
   line-height: 32px;
 }
 
 .body-s {
-  font-size: var(--fz-body-s);
+  font-size: var(--fs-body-s);
   line-height: 28px;
 }
 
