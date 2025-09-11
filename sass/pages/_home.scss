@@ -113,15 +113,21 @@
     height: 400px;
     & .article__image {
       order: 2;
+      width: 398px;
+      object-fit: cover;
       height: 100%;
     }
     & .article__content {
       max-width: 223px;
     }
   }
+
   @include mq($desktop) {
     & .article__content {
       max-width: 350px;
+    }
+    & .article__image {
+      width: 635px;
     }
   }
 }
@@ -139,6 +145,11 @@
       width: 398px;
     }
   }
+  @include mq($desktop) {
+    & > .article__image {
+      width: 635px;
+    }
+  }
 }
 .article__wrapper {
   display: flex;
@@ -152,6 +163,11 @@
     }
     & .article__content {
       flex-grow: 1;
+    }
+  }
+  @include mq($desktop) {
+    & .article__image {
+      height: 313px;
     }
   }
 }

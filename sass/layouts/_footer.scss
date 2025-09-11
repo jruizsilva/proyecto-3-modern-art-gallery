@@ -29,6 +29,9 @@
     max-width: 281px;
     margin-right: auto;
   }
+  @include mq($desktop) {
+    max-width: 430px;
+  }
 }
 .footer__text.location {
   color: var(--clr-black);
