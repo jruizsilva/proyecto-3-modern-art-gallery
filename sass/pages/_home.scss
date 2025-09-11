@@ -2,9 +2,16 @@
 .main {
   margin-bottom: 120px;
 }
+.hero {
+  position: relative;
+}
 .hero .container {
   position: relative;
   padding: 0;
+}
+.hero .wrapper {
+  margin-left: auto;
+  max-width: 768px;
 }
 .hero__background {
   background-image: url("/abuela-mobile.jpg");
@@ -25,14 +32,24 @@
     background-size: contain;
   }
 }
+.hero::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  display: none;
+  @include mq($desktop) {
+    display: block;
+  }
+}
 
-.hero .hero__content {
+.hero .hero__content-wrapper {
   display: flex;
   flex-direction: column;
   padding-inline: 16px;
   gap: 32px;
   margin-bottom: 120px;
-  position: relative;
 
   @include mq($tablet) {
     gap: 48px;
@@ -43,6 +60,9 @@
     position: absolute;
     right: 40px;
     top: 145px;
+  }
+  @include mq($desktop) {
+    top: 189px;
   }
 }
 .hero__title {
@@ -56,6 +76,24 @@
   @include mq($tablet) {
     font-size: var(--fs-heading-l);
     line-height: 65px;
+  }
+  @include mq($desktop) {
+    display: none;
+  }
+}
+.hero__title-desktop {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 189px;
+  font-size: var(--fs-heading-xl);
+  font-family: var(--ff-title);
+  text-transform: uppercase;
+  color: var(--clr-white);
+  max-width: 514px;
+  line-height: 88px;
+  @include mq($desktop) {
+    display: block;
   }
 }
 .hero__text {

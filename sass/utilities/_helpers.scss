@@ -9,4 +9,7 @@
     padding-inline: 2rem;
     max-width: 768px;
   }
+  @include mq($desktop) {
+    max-width: 1110px;
+  }
 }
