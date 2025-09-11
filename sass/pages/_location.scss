@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .location__button {
   position: absolute;
   left: 0;
@@ -5,7 +7,16 @@
 }
 .location__content {
   background-color: var(--clr-black);
-  padding: 48px 16px 56px 16px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+  @include mq($tablet) {
+    padding-top: 88px;
+    padding-bottom: 80px;
+  }
+  @include mq($desktop) {
+    padding-top: 104px;
+    padding-bottom: 128px;
+  }
 }
 .location__title {
   font-weight: var(--fw-black);
@@ -15,6 +26,11 @@
   font-size: var(--fs-heading-s);
   line-height: 45px;
   margin-bottom: 48px;
+
+  @include mq($desktop) {
+    font-size: var(--fs-heading-l);
+    line-height: 70px;
+  }
 }
 .location__subtitle {
   font-weight: var(--fw-black);
@@ -24,6 +40,11 @@
   font-size: var(--fs-heading-xs);
   line-height: 32px;
   margin-bottom: 20px;
+
+  @include mq($desktop) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 .location__address {
   margin-bottom: 20px;
@@ -34,4 +55,9 @@
   line-height: 28px;
   font-weight: var(--fw-light);
   font-style: normal;
+
+  @include mq($desktop) {
+    font-size: var(--fs-body-m);
+    line-height: 32px;
+  }
 }
