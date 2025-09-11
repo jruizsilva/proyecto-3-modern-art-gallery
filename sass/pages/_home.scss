@@ -1,13 +1,10 @@
 @use "../abstracts" as *;
 .main {
-  max-width: 768px;
-  margin-inline: auto;
   margin-bottom: 120px;
 }
-.hero {
-  max-width: 768px;
-  margin: 0 auto;
+.hero .container {
   position: relative;
+  padding: 0;
 }
 .hero__background {
   background-image: url("/abuela-mobile.jpg");
@@ -32,6 +29,7 @@
 .hero .hero__content {
   display: flex;
   flex-direction: column;
+  padding-inline: 16px;
   gap: 32px;
   margin-bottom: 120px;
   position: relative;
